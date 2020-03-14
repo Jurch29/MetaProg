@@ -64,8 +64,8 @@ public class Carnet implements ExportableXML {
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource domSource = new DOMSource(document);
-        StreamResult streamResult = new StreamResult(new File(file));
-        transformer.transform(domSource, streamResult);
+        StreamResult streamoutput = new StreamResult(new File(file));
+        transformer.transform(domSource, streamoutput);
 	}
 
 	@Override
@@ -99,8 +99,8 @@ public class Carnet implements ExportableXML {
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource domSource = new DOMSource(document);
-        StreamResult streamResult = new StreamResult(new File(file));
-        transformer.transform(domSource, streamResult);
+        StreamResult streamoutput = new StreamResult(new File(file));
+        transformer.transform(domSource, streamoutput);
 	}
 	
 	public void showAll() {
